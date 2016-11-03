@@ -3,12 +3,12 @@
 "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-
+          <!-- Autowire è un altro modo per effettuare l'iniezione di un oggetto dentro un altro oggetto
+          Autowire può essere byName oppure byType. Si usa il byType solo quando esiste UN SOLO BEAN di tipo Punto -->
           <bean id="triangolo"   class="quarto.esempio.Triangolo" autowire="byName" />
           
-          
-          
-          
+            <!-- All'interno dell'id "puntoA" devo prendere l'esatto nome dell'attributo
+            che ho impostato nella classe Triangolo-->
             <bean id="puntoA"   class="quarto.esempio.Punto">
             
                <property name="x" value="10"></property>
