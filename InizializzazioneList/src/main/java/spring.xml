@@ -4,19 +4,17 @@
 
 <beans>
 <bean id="triangolo"   class="terzo.esempio.Triangolo">
-                
-              <property name="punti">
+
+           <!-- Voglio inizializzare la lista punti che ho nellaclasse Triangolo -->     
+           <property name="punti">
               
                 <list>
-                      <ref bean="p2" />
+                <!-- Qui inserisco i punti che devo aver già definito sotto -->
+                    <ref bean="p2" />
                     <ref bean="p1" />
-                  
-                
-                
                 </list>
-              
-              
-              </property>
+   
+            </property>
                 
           </bean>
           
