@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+         <bean id="triangolo" class="settimo.esempio.Triangolo" autowire="byName" scope="singleton"/>
+	  
+	       
+	  
+
+
+	<bean id="puntoA" class="settimo.esempio.Punto" scope="prototype">
+
+	<property name="x" value="10" />
+	<property name="y" value="10" />
+
+	</bean>
+
+	<bean id="puntoB" class="settimo.esempio.Punto">
+
+	<property name="x" value="20" />
+	<property name="y" value="20" />
+
+	</bean>
+
+	<bean id="puntoC" class="settimo.esempio.Punto">
+
+	<property name="x" value="${pointA.pointX}" />
+	<property name="y" value="${pointA.pointY}" />
+
+	</bean>
+    
+<!--     <bean  class="it.alfasoft.vahid.BeanFactoryPostProcessor.MyBeanFactoryPP"/> -->
+    
+<!--     bean for property placeHolder -->
+
+          <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+           
+           <property name="locations" value="punti.properties"></property>
+          
+          </bean>
+            
+  </beans>          
