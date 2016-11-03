@@ -5,11 +5,15 @@
 <beans>
 
     <bean id="triangolo"   class="primo.esempio.Triangolo">
-        
-           <property name="nome" value="Equilaterale" /> 
+    
+           <!-- Modo per settare l'attributo 'nome' della classe Triangolo-->
+           <property name="nome" value="Equilatero" /> 
 
-<!--            <constructor-arg   index="0" value="Equilaterale"/> -->
-<!--           <constructor-arg   index="1"  value="20"/> -->
+           <!-- Modo per settare due attributi della classe Triangolo utilizzando il costruttore.
+           Con index=0 prendo il primo attributo
+           Con index=1 prendo il secondo attributo-->
+<!--       <constructor-arg   index="0" value="Equilaterale"/> -->
+<!--       <constructor-arg   index="1"  value="20"/> -->
     </bean> 
 
          
