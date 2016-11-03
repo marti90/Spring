@@ -5,31 +5,33 @@
 <beans>
 
           <bean id="triangolo"   class="secondo.esempio.Triangolo">
+          
+                <!-- Qui effettuo l'iniezione dei punti che ho definito sotto-->
                 <property name="puntoA"    ref="p1"/>
                 <property name="puntoB"    ref="p2"/>
                 <property name="puntoC"    ref="p3"/>
                 
           </bean>
           
-            <bean id="p1"   class="secondo.esempio.Punto">
+          <bean id="p1"   class="secondo.esempio.Punto">
             
                <property name="x" value="10"></property>
                <property name="y" value="10"></property>
           
-            </bean>
+          </bean>
             
-               <bean id="p2"   class="secondo.esempio.Punto">
+          <bean id="p2"   class="secondo.esempio.Punto">
             
                <property name="x" value="20"></property>
                <property name="y" value="20"></property>
           
-            </bean>
+          </bean>
             
-               <bean id="p3"   class="secondo.esempio.Punto">
+          <bean id="p3"   class="secondo.esempio.Punto">
             
                <property name="x" value="30"></property>
                <property name="y" value="30"></property>
           
-            </bean>
+          </bean>
             
   </beans>  
